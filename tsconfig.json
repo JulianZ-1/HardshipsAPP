@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+      "target": "ES2020",
+      "module": "ESNext",
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "jsx": "react-jsx",
+  
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+  
+      // Important for default imports (like `import React from 'react'`)
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+  
+      // Speeds up checking, and reduces type definition errors
+      "skipLibCheck": true,
+  
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true
+    },
+    "include": ["src"]
+  }
+  
