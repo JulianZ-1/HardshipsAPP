@@ -2,9 +2,21 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Before running this applicaiton
+There are couple things that needs to be checked before running this application.
+
+- run `npm install`
+  - Running the install command will install all the required packages from the package.json file.
+- Double check default IP addresses
+  - By default, the **front-end application runs on port 3000**, and the **back-end runs on port 7241**. You can change these ports to suit your preferences.
+- There are nine accounts available for testing, with Debt IDs ranging from 1 to 9. Each Debt ID is associated with only one hardship.
+
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+Please install the required libraries for the application to run. You can do this by running the following command, which will install all the dependencies listed in the package.json file. Make sure to execute this command immediately after downloading the application.
 
 ### `npm start`
 
