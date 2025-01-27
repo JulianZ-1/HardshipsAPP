@@ -1,25 +1,60 @@
 import { createTheme } from '@mui/material/styles';
 
-const draculaTheme = createTheme({
+const customTheme = createTheme({
   palette: {
     primary: {
-      main: '#6272a4', // Dracula purple
+      main: '#415A77',
+      contrastText: '#E0E1DD',
     },
     secondary: {
-      main: '#ff79c6', // Dracula pink
+      main: '#778DA9',    // Secondary gray-blue
+      contrastText: '#0D1B2A',  // Dark text
     },
     background: {
-      default: '#282a36', // Dracula background
-      paper: '#44475a', // Dracula darker background
+      default: '#0D1B2A',  // Dark navy background
+      paper: '#1B263B',    // Slightly lighter navy for surfaces
     },
     text: {
-      primary: '#f8f8f2', // Dracula foreground
-      secondary: '#bd93f9', // Dracula light purple
+      primary: '#E0E1DD',  // Off-white main text
+      secondary: '#778DA9', // Gray-blue secondary text
     },
+    divider: '#1B263B',    // Divider color
   },
   typography: {
-    fontFamily: 'Arial, sans-serif', // You can use any preferred font
+    fontFamily: 'Roboto, Arial, sans-serif',
+    h1: {
+      color: '#E0E1DD',
+      fontWeight: 500,
+    },
+    h2: {
+      color: '#E0E1DD',
+      fontWeight: 500,
+    },
+    // Add more typography variants as needed
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        contained: {
+          backgroundColor: '#415A77',
+          '&:hover': {
+            backgroundColor: '#344A66',
+          },
+        },
+        outlined: {
+          borderColor: '#778DA9',
+          color: '#778DA9',
+        },
+      },
+    },
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#1B263B',
+        },
+      },
+    },
   },
 });
 
-export default draculaTheme;
+export default customTheme;

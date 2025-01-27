@@ -75,7 +75,7 @@ const HardshipEditScreen: React.FC = () => {
         }}
       >
         {/* Back Button */}
-        <IconButton onClick={handleBack} sx={{ alignSelf: 'start' }}>
+        <IconButton onClick={handleBack} style={{ backgroundColor: 'white' }} sx={{ alignSelf: 'start' }}>
           <ArrowBackIcon />
         </IconButton>
 

@@ -4,16 +4,14 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import axios, { AxiosError } from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { Hardship } from '../types/hardship'; // Ensure this type includes at least 'debtID'
+import { Hardship } from '../types/hardship';
 
 const HardshipsListScreen: React.FC = () => {
     const navigate = useNavigate();
 
-    // State to store fetched hardships
     const [hardships, setHardships] = useState<Hardship[] | undefined>(undefined);
     const [loading, setLoading] = useState<boolean>(false);
 
-    // Function to fetch hardships from the backend
     const fetchHardships = async () => {
         setLoading(true);
         try {
@@ -36,7 +34,6 @@ const HardshipsListScreen: React.FC = () => {
         fetchHardships();
     }, []);
 
-    // Handle back navigation
     const handleBack = () => {
         navigate('/');
     };
@@ -59,7 +56,6 @@ const HardshipsListScreen: React.FC = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     gap: 2,
-                    // width: '400px',
                     padding: '16px',
                     bgcolor: 'background.paper',
                     borderRadius: 2,
@@ -67,9 +63,10 @@ const HardshipsListScreen: React.FC = () => {
                 }}
             >
                 {/* Back Button */}
-                <IconButton onClick={handleBack} sx={{ alignSelf: 'start' }}>
+                <IconButton onClick={handleBack} style={{ backgroundColor: 'white' }} sx={{ alignSelf: 'start' }}>
                     <ArrowBackIcon />
                 </IconButton>
+
                 {loading ? <CircularProgress /> : hardships && hardships.length > 0 ? <Typography variant="h5" align="center" gutterBottom>
                     List of hardships
                 </Typography> : <Typography variant="h5" align="center" gutterBottom>

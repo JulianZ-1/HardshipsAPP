@@ -31,36 +31,36 @@ const MainScreen: React.FC = () => {
         <Button
           variant="contained"
           sx={{
-            bgcolor: 'primary.main', // Default background color
+            bgcolor: 'primary.main',
             '&:hover': {
-              bgcolor: 'secondary.main', // Hover color
+              bgcolor: 'secondary.main',
             },
           }}
-          onClick={() => navigate('/hardship/create')} // Fixed
+          onClick={() => navigate('/hardship/create')}
         >
           Create New Hardship
         </Button>
         <Button
           variant="contained"
           sx={{
-            bgcolor: 'primary.main', // Default background color
+            bgcolor: 'primary.main',
             '&:hover': {
-              bgcolor: 'secondary.main', // Hover color
+              bgcolor: 'secondary.main',
             },
           }}
-          onClick={() => navigate('/debts')} // Fixed
+          onClick={() => navigate('/debts')}
         >
           View All Hardship
         </Button>
         <Button
           variant="contained"
           sx={{
-            bgcolor: 'primary.main', // Default background color
+            bgcolor: 'primary.main',
             '&:hover': {
-              bgcolor: 'secondary.main', // Hover color
+              bgcolor: 'secondary.main',
             },
           }}
-          onClick={() => navigate('/hardship/edit')} // Fixed
+          onClick={() => navigate('/hardship/edit')}
         >
           Edit Hardship
         </Button>

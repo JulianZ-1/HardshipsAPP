@@ -234,7 +234,7 @@ const HardshipFormScreen: React.FC = () => {
           }}
         >
           {/* Back Button */}
-          <IconButton onClick={() => navigate('/')} sx={{ alignSelf: 'start' }}>
+          <IconButton style={{ backgroundColor: 'white' }} onClick={() => navigate('/')} sx={{ alignSelf: 'start' }}>
             <ArrowBackIcon />
           </IconButton>
 
